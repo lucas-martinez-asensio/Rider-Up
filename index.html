@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rider Up</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/logo.png" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section><article></article></section>
+      <section class="map-cont">
+        <article class="map-title">
+          <div class="glass-cont">
+            <div class="title-cont">
+              <h2>Mapa de locales</h2>
+            </div>
+            <div class="desc-cont">
+              <p>
+                Locales que devuelven el dinero en caso de haber problemas en la
+                entrega.
+              </p>
+              <div class="simbols-desc-cont">
+                <div class="simbols-desc">
+                  <img src="./img/ok.png" alt="símbolo ok" />
+                  <p>Local que devuelve dinero</p>
+                </div>
+                <div class="simbols-desc">
+                  <img src="./img/not.png" alt="símbolo de cruz" />
+                  <p>Local que no devuelve el dinero</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article id="map"></article>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="./script.js"></script>
+  <script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzTiMEb6z1Yai2cVYrN1HHnkXmJXVzXHY"
+  ></script>
+</html>
