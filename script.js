@@ -1,40 +1,3 @@
-/* Mapa
-Localizaciones de locales en Api de Google Maps
-
-Si usuario brinda permisos de localización, trae el mapa, localización del cliente y de los locales. 
-
-
-*/
-
-// const getLocations = () => {
-//   fetch("https://www.datos.gov.co/resource/g373-n3yy.json")
-//     .then((response) => response.json())
-//     .then((locations) => {
-//       let locationsInfo = [];
-
-//       locations.forEach((location) => {
-//         let locationData = {
-//           position: {
-//             lat: location.punto.coordinates[1],
-//             lng: location.punto.coordinates[0],
-//           },
-//           name: location.nombre_sede,
-//         };
-//         locationsInfo.push(locationData);
-//       });
-//       if (navigator.geolocation) {
-//         navigator.geolocation.getCurrentPosition((data) => {
-//           let currentPosition = {
-//             lat: data.coords.latitude,
-//             lng: data.coords.longitude,
-//           };
-//           console.log(locationsInfo);
-//           dibujarMapa(currentPosition, locationsInfo);
-//         });
-//       }
-//     });
-// };
-
 const getLocations = () => {
   class Local {
     constructor(name, position, returnsMoney, detail, icon) {
@@ -549,9 +512,6 @@ const dibujarMapa = (obj, locationsInfo) => {
     });
   });
 
-  console.log(markers);
-  console.log(infowindow);
-
   marker.addListener("click", () => {
     infowindowme.open({
       anchor: marker,
@@ -562,7 +522,6 @@ const dibujarMapa = (obj, locationsInfo) => {
 
   let info = markers.map((places) =>
     places.addListener("click", () => {
-      console.log(places);
       let index = markers.indexOf(places);
 
       infowindow[index].open({
