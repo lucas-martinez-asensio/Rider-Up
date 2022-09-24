@@ -126,6 +126,14 @@ const getLocations = () => {
     "./img/ok.png"
   );
 
+  const Brie = new Local(
+    "Brie",
+    { lat: -34.5675653785325, lng: -58.457634964458244 },
+    false,
+    `Brie: ${yesRet}.`,
+    "./img/ok.png"
+  );
+
   const TiendaCafJu = new Local(
     "Tienda de Café Juramento",
     { lat: -34.55920813662781, lng: -58.45234938951236 },
@@ -180,9 +188,9 @@ const getLocations = () => {
   const ChinoCon = new Local(
     "Winning Burguer y otros",
     { lat: -34.556025000789674, lng: -58.46410237364514 },
-    false,
-    `Winning Burguer y otros: ${noRet}.`,
-    "./img/not.png"
+    true,
+    `Winning Burguer y otros: ${yesRet}, es lo que me dijeron pero nunca lo comprobé.`,
+    "./img/ok.png"
   );
 
   const DeanNDennysB = new Local(
@@ -309,8 +317,8 @@ const getLocations = () => {
     "Home Deli",
     { lat: -34.55229900219062, lng: -58.45707730378388 },
     false,
-    `Home Deli: ${noRet}.`,
-    "./img/not.png"
+    `Home Deli: devuelven pero ya gestionan pedidos en efectivo, son todos online por el momento sus pedidos.`,
+    "./img/ok.png"
   );
 
   const ElDesem = new Local(
@@ -318,6 +326,14 @@ const getLocations = () => {
     { lat: -34.54472060688477, lng: -58.46155709866476 },
     false,
     `El Desembarco Nuñez: ${noRet}.`,
+    "./img/not.png"
+  );
+
+  const Foret = new Local(
+    "Foret",
+    { lat: -34.551398676872026, lng: -58.454220212341966 },
+    false,
+    `Foret: ${noRet}.`,
     "./img/not.png"
   );
 
@@ -417,6 +433,13 @@ const getLocations = () => {
     "./img/not.png"
   );
 
+  const DalalVid = new Local(
+    "Dalal Vidal",
+    { lat: -34.56830386308433, lng: -58.4566619589171 },
+    `Creme Chic: ${noRet}.`,
+    "./img/not.png"
+  );
+
   locationsInfo.push(
     BKQ,
     BKJH,
@@ -467,7 +490,9 @@ const getLocations = () => {
     SubWIb,
     VivaAr,
     NoahGKCv,
-    CremeChic
+    CremeChic,
+    Brie,
+    DalalVid
   );
 
   if (navigator.geolocation) {
