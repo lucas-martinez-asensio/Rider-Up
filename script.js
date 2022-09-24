@@ -436,7 +436,8 @@ const getLocations = () => {
   const DalalVid = new Local(
     "Dalal Vidal",
     { lat: -34.56830386308433, lng: -58.4566619589171 },
-    `Creme Chic: ${noRet}.`,
+    false,
+    `Dalal Vidal: ${noRet}.`,
     "./img/not.png"
   );
 
@@ -492,7 +493,8 @@ const getLocations = () => {
     NoahGKCv,
     CremeChic,
     Brie,
-    DalalVid
+    DalalVid,
+    Foret
   );
 
   if (navigator.geolocation) {
