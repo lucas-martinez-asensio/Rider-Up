@@ -98,6 +98,16 @@ main {
   width: 2rem;
   height: 2rem;
 }
+
+footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+footer p {
+  font-size: 0.75rem;
+}
 @media (min-width: 650px) {
   body {
     background-image: linear-gradient(
