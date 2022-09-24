@@ -161,7 +161,7 @@ footer p {
   }
 
   .title-cont {
-    height: 20%;
+    height: 10%;
     margin: 0.5rem;
   }
 
@@ -198,7 +198,7 @@ footer p {
 @media (min-width: 1070px) {
   .map-title {
     width: 20%;
-    height: 32.5%;
+    height: 40%;
     align-items: flex-start;
   }
 
