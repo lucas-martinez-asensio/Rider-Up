@@ -1,3 +1,5 @@
+// map
+
 const getLocations = () => {
   class Local {
     constructor(name, position, returnsMoney, detail, icon) {
@@ -561,3 +563,81 @@ const dibujarMapa = (obj, locationsInfo) => {
 };
 
 window.addEventListener("load", getLocations);
+
+// tip calculator
+
+const visor = document.querySelector("#visor");
+const restart = document.querySelector("#restart");
+const ten = document.querySelector("#ten");
+const twenty = document.querySelector("#twenty");
+const thirty = document.querySelector("#thirty");
+const fourty = document.querySelector("#fourty");
+const fifty = document.querySelector("#fifty");
+const hundred = document.querySelector("#hundred");
+const twohundred = document.querySelector("#twohundred");
+const threehundred = document.querySelector("#threehundred");
+const fourhundred = document.querySelector("#fourhundred");
+let counter = 0;
+visor.innerHTML = counter;
+
+restart.addEventListener("click", () => {
+  counter = 0;
+  visor.innerHTML = counter;
+});
+
+ten.addEventListener("click", () => {
+  counter += 10;
+  visor.innerHTML = counter;
+});
+
+twenty.addEventListener("click", () => {
+  counter += 20;
+  visor.innerHTML = counter;
+});
+
+thirty.addEventListener("click", () => {
+  counter += 30;
+  visor.innerHTML = counter;
+});
+
+fourty.addEventListener("click", () => {
+  counter += 40;
+  visor.innerHTML = counter;
+});
+
+fifty.addEventListener("click", () => {
+  counter += 50;
+  visor.innerHTML = counter;
+});
+
+hundred.addEventListener("click", () => {
+  counter += 100;
+  visor.innerHTML = counter;
+});
+
+twohundred.addEventListener("click", () => {
+  counter += 200;
+  visor.innerHTML = counter;
+});
+
+threehundred.addEventListener("click", () => {
+  counter += 300;
+  visor.innerHTML = counter;
+});
+
+fourhundred.addEventListener("click", () => {
+  counter += 400;
+  visor.innerHTML = counter;
+});
+
+const otherVal = document.querySelector("#other-val");
+const sumVal = document.querySelector("#other-sum");
+const subsVal = document.querySelector("#other-subs");
+
+let num = otherVal.value;
+
+sumVal.addEventListener("click", () => {
+  console.log(num);
+  counter += +num;
+  visor.innerHTML = counter;
+});

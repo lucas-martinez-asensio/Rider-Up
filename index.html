@@ -11,7 +11,7 @@
   <body>
     <header></header>
     <main>
-      <section><article></article></section>
+      <!-- mapa de locales -->
       <section class="map-cont">
         <article class="map-title">
           <div class="glass-cont">
@@ -41,6 +41,49 @@
           alt="Mapa de google maps con locales marcados"
         ></article>
       </section>
+      <!-- /mapa de locales -->
+      <!-- calculadora de propina -->
+      <section class="tip-calc">
+        <article class="glass-cont">
+          <h1>Calculadora para Propinas 💵</h1>
+          <br />
+          <br />
+          <p>Cada vez que presiones un botón se sumará a tu propina total</p>
+          <br />
+          <p>
+            Si querés otro monto podés escribir en donde dice otro valor y
+            presiona el botón sumar o restar
+          </p>
+        </article>
+        <article class="calc">
+          <div>
+            <div class="visor" id="visor"></div>
+            <button class="btn-tip restart" id="restart">Restart</button>
+          </div>
+          <div>
+            <button class="btn-tip" id="ten">10</button>
+            <button class="btn-tip" id="twenty">20</button>
+            <button class="btn-tip" id="thirty">30</button>
+            <button class="btn-tip" id="fourty">40</button>
+            <button class="btn-tip" id="fifty">50</button>
+            <button class="btn-tip" id="hundred">100</button>
+            <button class="btn-tip" id="twohundred">200</button>
+            <button class="btn-tip" id="threehundred">300</button>
+            <button class="btn-tip" id="fourhundred">400</button>
+          </div>
+          <div>
+            <input
+              type="text"
+              class="other-val"
+              id="other-val"
+              aria-label="otro valor"
+            />
+            <button class="btn-tip" id="other-sum">Sumar</button>
+            <button class="btn-tip" id="other-subs">Restar</button>
+          </div>
+        </article>
+      </section>
+      <!-- /calculadora de propina -->
     </main>
     <footer>
       <p>
