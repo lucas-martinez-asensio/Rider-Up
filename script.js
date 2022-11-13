@@ -1,3 +1,34 @@
+// switch fx
+
+const mapCont = document.querySelector(".map-cont");
+const calcCont = document.querySelector(".tip-calc");
+const mapBtn = document.getElementById("map-btn");
+const calcBtn = document.getElementById("calc-btn");
+
+let bMapOn = 1;
+let bCalcOn = 0;
+
+function switchCalc() {
+  if (bMapOn) {
+    bMapOn = 0;
+    bCalcOn = 1;
+    mapCont.classList.toggle("map-cont-not");
+    calcCont.classList.toggle("tip-calc-not");
+  }
+}
+
+function switchMap() {
+  if (bCalcOn) {
+    bMapOn = 1;
+    bCalcOn = 0;
+    calcCont.classList.toggle("tip-calc-not");
+    mapCont.classList.toggle("map-cont-not");
+  }
+}
+
+calcBtn.addEventListener("click", switchCalc);
+
+mapBtn.addEventListener("click", switchMap);
 // map
 
 const getLocations = () => {
@@ -630,14 +661,21 @@ fourhundred.addEventListener("click", () => {
   visor.innerHTML = counter;
 });
 
-const otherVal = document.querySelector("#other-val");
-const sumVal = document.querySelector("#other-sum");
-const subsVal = document.querySelector("#other-subs");
-
-let num = otherVal.value;
+const sumVal = document.getElementById("other-sum");
+const subsVal = document.getElementById("other-subs");
 
 sumVal.addEventListener("click", () => {
-  console.log(num);
-  counter += +num;
-  visor.innerHTML = counter;
+  let otherVal = parseInt(document.getElementById("otherval").value);
+  if (otherVal) {
+    counter += otherVal;
+    visor.innerHTML = counter;
+  }
+});
+
+subsVal.addEventListener("click", () => {
+  let otherVal = parseInt(document.getElementById("otherval").value);
+  if (otherVal) {
+    counter -= otherVal;
+    visor.innerHTML = counter;
+  }
 });

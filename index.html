@@ -7,10 +7,27 @@
     <link rel="stylesheet" href="style.css" />
     <title>Riders Info</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./img/logo.png" />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    /> -->
   </head>
   <body>
-    <header></header>
     <main>
+      <!-- selector btn -->
+      <article class="selector">
+        <section class="btn-cont">
+          <button class="selector-btn btn-map" id="map-btn">
+            Mapa de Locales
+          </button>
+          <button class="selector-btn btn-calc" id="calc-btn">
+            Calculador de Propina
+          </button>
+        </section>
+      </article>
+      <!-- /selector btn -->
       <!-- mapa de locales -->
       <section class="map-cont">
         <article class="map-title">
@@ -43,7 +60,7 @@
       </section>
       <!-- /mapa de locales -->
       <!-- calculadora de propina -->
-      <section class="tip-calc">
+      <section class="tip-calc tip-calc-not">
         <article class="glass-cont">
           <h1>Calculadora para Propinas 💵</h1>
           <br />
@@ -51,8 +68,8 @@
           <p>Cada vez que presiones un botón se sumará a tu propina total</p>
           <br />
           <p>
-            Si querés otro monto podés escribir en donde dice otro valor y
-            presiona el botón sumar o restar
+            Si querés otro monto escribe donde dice otro valor y presiona el
+            botón sumar o restar
           </p>
         </article>
         <article class="calc">
@@ -71,15 +88,18 @@
             <button class="btn-tip" id="threehundred">300</button>
             <button class="btn-tip" id="fourhundred">400</button>
           </div>
-          <div>
+          <div class="other-val_cont">
             <input
               type="text"
+              name="other-val"
               class="other-val"
-              id="other-val"
-              aria-label="otro valor"
+              id="otherval"
+              placeholder="otro valor"
             />
-            <button class="btn-tip" id="other-sum">Sumar</button>
-            <button class="btn-tip" id="other-subs">Restar</button>
+            <div>
+              <button class="btn-tip" id="other-sum">Sumar</button>
+              <button class="btn-tip" id="other-subs">Restar</button>
+            </div>
           </div>
         </article>
       </section>
@@ -98,4 +118,9 @@
     defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzTiMEb6z1Yai2cVYrN1HHnkXmJXVzXHY"
   ></script>
+  <!-- <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+  ></script> -->
 </html>
