@@ -7,13 +7,13 @@
 body {
   background-image: linear-gradient(
     60deg,
-    rgb(219, 2, 89) 15%,
-    rgb(255, 240, 120) 80%
+    rgb(212, 179, 193) 15%,
+    rgb(250, 244, 199) 80%
   );
   background-size: 200% 200%;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Verdana, sans-serif;
-  color: rgb(255, 255, 255);
+  color: rgb(102, 98, 98);
 }
 
 main {
@@ -207,10 +207,10 @@ main {
 
 .btn-tip {
   padding: 0.5rem;
-  background-color: rgb(200, 0, 80);
+  background-color: rgb(248, 50, 93);
   backdrop-filter: blur(0.5rem);
   border-radius: 1rem;
-  border: 0.15rem solid rgba(255, 239, 120, 0.575);
+  border: 0.15rem solid rgba(255, 185, 120, 0.575);
   color: white;
   margin-top: 0.5rem;
 }
@@ -251,15 +251,6 @@ footer p {
   font-size: 0.75rem;
 }
 @media (min-width: 650px) {
-  body {
-    background-image: linear-gradient(
-      45deg,
-      rgb(200, 0, 80) 20%,
-      rgb(255, 240, 120) 73%
-    );
-    background-size: 200% 200%;
-  }
-
   main {
     text-align: start;
   }
