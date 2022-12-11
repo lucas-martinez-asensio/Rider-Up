@@ -491,6 +491,222 @@ const getLocations = () => {
     "./img/not.png"
   );
 
+  const PaneraRosa = new Local(
+    "La Panera Rosa",
+    { lat: -34.56532408153224, lng: -58.43628344708229 },
+    false,
+    `La Panera Rosa: ${noRet}`,
+    "./img/not.png"
+  );
+
+  const Pani = new Local(
+    "Pani",
+    { lat: -34.54713288331433, lng: -58.45903257119434 },
+    false,
+    `Pani: ${noRet}`,
+    "./img/not.png"
+  );
+
+  const MezzeDelicatessen = new Local(
+    "Mezze Delicatessen",
+    { lat: -34.56960704975758, lng: -58.44170991586775 },
+    false,
+    `Mezze Delicatessen: ${noRet}`,
+    "./img/not.png"
+  );
+
+  const LaFarElc = new Local(
+    "La Farola Elcano",
+    { lat: -34.571460725298174, lng: -58.458761869624404 },
+    false,
+    `La Farola Elcano: ${noRet}`,
+    "./img/not.png"
+  );
+
+  const StarbucksElc = new Local(
+    "Starbucks Elcano",
+    { lat: -34.572678157088106, lng: -58.45959037562206 },
+    false,
+    `Starbucks Elcano: ${noRet}`,
+    "./img/not.png"
+  );
+
+  const PerezH = new Local(
+    "Perez H",
+    { lat: -34.57502355004374, lng: -58.46012371342646 },
+    false,
+    `Perez H: ${noRet}. No sólo eso sino que cada pedido tardan 20 min a 40 min desde que uno llega.`,
+    "./img/not.png"
+  );
+
+  const McDElc = new Local(
+    "Mc Donald Elcano",
+    { lat: -34.57356809209969, lng: -58.45950162594877 },
+    false,
+    `Mc Donald Elcano: ${yesRet}`,
+    "./img/ok.png"
+  );
+
+  const SubwayElc = new Local(
+    "Subway Elcano",
+    { lat: -34.57380546465828, lng: -58.45993405262207 },
+    false,
+    `Subway Elcano: ${noRet}`,
+    "./img/not.png"
+  );
+
+  const Burgertify = new Local(
+    "Burgertify",
+    { lat: -34.565414756436915, lng: -58.45548751270481 },
+    false,
+    `Burgertify: ${noRet}`,
+    "./img/not.png"
+  );
+
+  const FreddoJH = new Local(
+    "Freddo Jose Hernández",
+    { lat: -34.56578084959185, lng: -58.453445245080616 },
+    false,
+    `Freddo Jose Hernández: ${yesRet}`,
+    "./img/ok.png"
+  );
+
+  const StarbucksJu = new Local(
+    "Starbucks Juramento",
+    { lat: -34.56184445488748, lng: -58.456009596688546 },
+    false,
+    `Starbucks Juramento: ${yesRet}`,
+    "./img/ok.png"
+  );
+
+  const KentuckyJu = new Local(
+    "Kentucky Juramento",
+    { lat: -34.56162798852761, lng: -58.45628318198525 },
+    false,
+    `Kentucky Juramento: ${noRet}`,
+    "./img/not.png"
+  );
+
+  const Inmortales = new Local(
+    "Los Inmortales",
+    { lat: -34.5607189424597, lng: -58.45686491957505 },
+    false,
+    `Los Inmortales: ${noRet}`,
+    "./img/not.png"
+  );
+
+  const AlRayanMen = new Local(
+    "Al Rayán Mendoza",
+    { lat: -34.5608030120174, lng: -58.45693721310829 },
+    false,
+    `Al Rayán Mendoza: ${noRet}`,
+    "./img/not.png"
+  );
+
+  const CremolattiCab = new Local(
+    "Cremolatti Cabildo",
+    { lat: -34.55977298199355, lng: -58.4590665200053 },
+    false,
+    `Cremolatti Cabildo: ${noRet}`,
+    "./img/not.png"
+  );
+
+  const Maricel = new Local(
+    "Maricel",
+    { lat: -34.55846718449781, lng: -58.45999125861947 },
+    false,
+    `Maricel: ${noRet}`,
+    "./img/not.png"
+  );
+
+  const StarbucksRoos = new Local(
+    "Starbucks Roosvelt",
+    { lat: -34.55775998308781, lng: -58.46065865578124 },
+    false,
+    `Starbucks Roosvelt: ${yesRet}`,
+    "./img/ok.png"
+  );
+
+  const FreddoCab = new Local(
+    "Freddo Cabildo",
+    { lat: -34.55753193651382, lng: -58.46029071382443 },
+    false,
+    `Freddo Cabildo: ${yesRet}`,
+    "./img/ok.png"
+  );
+
+  const Leble = new Local(
+    "Le ble",
+    { lat: -34.55723039953962, lng: -58.462111764102914 },
+    false,
+    `Le ble: ${noRet}`,
+    "./img/not.png"
+  );
+
+  const Holzen = new Local(
+    "Holzen",
+    { lat: -34.55386267075252, lng: -58.46494554580407 },
+    false,
+    `Holzen: ${noRet}`,
+    "./img/not.png"
+  );
+
+  const LeBleMP = new Local(
+    "Le ble Pedraza",
+    { lat: -34.55020453534474, lng: -58.46424046663666 },
+    false,
+    `Le ble Pedraza: ${noRet}`,
+    "./img/not.png"
+  );
+
+  const LaEsc = new Local(
+    "La Escondida",
+    { lat: -34.55037243031759, lng: -58.46309248127402 },
+    false,
+    `La Escondida: ${noRet}`,
+    "./img/not.png"
+  );
+
+  const Chantilly = new Local(
+    "Chantilly",
+    { lat: -34.56224840409605, lng: -58.44401412007 },
+    false,
+    `Chantilly: ${noRet} Tratar de no levantar pedidos de este local, las 3 veces que fui dicen que no tienen el producto y que ya hablaron con soporte. Esto es mentira y dejan que vengan un rider atrás de otro.`,
+    "./img/not.png"
+  );
+
+  const GuitarritaNu = new Local(
+    "La Guitarrita Nuñez",
+    { lat: -34.54963512003065, lng: -58.46571140784197 },
+    false,
+    `La Guitarrita Nuñez: ${noRet} Tratar de no levantar pedidos de montos altos de este local, realizan pedidos falsos desde el local.`,
+    "./img/not.png"
+  );
+
+  const Baldini = new Local(
+    "Baldini",
+    { lat: -34.548702262875196, lng: -58.46809309656214 },
+    false,
+    `Baldini: ${noRet}`,
+    "./img/not.png"
+  );
+
+  const LaParraca = new Local(
+    "La Parraca",
+    { lat: -34.55675336543297, lng: -58.46824598648298 },
+    false,
+    `La Parraca: ${noRet}`,
+    "./img/not.png"
+  );
+
+  const KentuckyCramer = new Local(
+    "Kentucky Cramer",
+    { lat: -34.557876704448994, lng: -58.46691304174386 },
+    false,
+    `Kentucky Cramer: ${noRet}`,
+    "./img/not.png"
+  );
+
   locationsInfo.push(
     sushiPop,
     BKQ,
@@ -546,7 +762,34 @@ const getLocations = () => {
     CremeChic,
     Brie,
     DalalVid,
-    Foret
+    Foret,
+    PaneraRosa,
+    Pani,
+    MezzeDelicatessen,
+    LaFarElc,
+    StarbucksElc,
+    PerezH,
+    McDElc,
+    SubwayElc,
+    Burgertify,
+    FreddoJH,
+    KentuckyJu,
+    StarbucksJu,
+    Inmortales,
+    AlRayanMen,
+    CremolattiCab,
+    Maricel,
+    StarbucksRoos,
+    FreddoCab,
+    Leble,
+    Holzen,
+    LeBleMP,
+    LaEsc,
+    Chantilly,
+    GuitarritaNu,
+    Baldini,
+    LaParraca,
+    KentuckyCramer
   );
 
   if (navigator.geolocation) {
