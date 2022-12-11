@@ -47,6 +47,15 @@ const getLocations = () => {
   const noRet = "Este local no devuelve el dinero 💩";
   const yesRet = "Este local devuelve el dinero 😄";
 
+  const sushiPop = new Local(
+    "Sushi Pop",
+    { lat: -34.56038562958827, lng: -58.47175455711277 },
+    true,
+    `SushiPop: ${yesRet}. 
+    <br ><br > Tener en cuenta que devuelve hasta las 23hs.`,
+    "./img/ok.png"
+  );
+
   const BKQ = new Local(
     "Burguer King Quesada",
     { lat: -34.55472385657484, lng: -58.46292771455961 },
@@ -410,6 +419,14 @@ const getLocations = () => {
     "./img/not.png"
   );
 
+  const Dogg = new Local(
+    "Dogg",
+    { lat: -34.55480102880425, lng: -58.45192853579767 },
+    false,
+    "Dogg: " + noRet,
+    './img/not.png"'
+  );
+
   const CisneBl = new Local(
     "Cisne Blanco",
     { lat: -34.556039899341, lng: -58.451942088984644 },
@@ -475,6 +492,7 @@ const getLocations = () => {
   );
 
   locationsInfo.push(
+    sushiPop,
     BKQ,
     BKJH,
     LaFarR,
@@ -515,6 +533,7 @@ const getLocations = () => {
     FreddoCongr,
     ClMilMig,
     FabSushBCH,
+    Dogg,
     CisneBl,
     DalalMig,
     WilliamLib,
@@ -597,85 +616,89 @@ window.addEventListener("load", getLocations);
 
 // tip calculator
 
-const visor = document.querySelector("#visor");
-const restart = document.querySelector("#restart");
-const ten = document.querySelector("#ten");
-const twenty = document.querySelector("#twenty");
-const thirty = document.querySelector("#thirty");
-const fourty = document.querySelector("#fourty");
-const fifty = document.querySelector("#fifty");
-const hundred = document.querySelector("#hundred");
-const twohundred = document.querySelector("#twohundred");
-const threehundred = document.querySelector("#threehundred");
-const fourhundred = document.querySelector("#fourhundred");
-let counter = 0;
-visor.innerHTML = counter;
-
-restart.addEventListener("click", () => {
-  counter = 0;
+function calculator() {
+  const visor = document.querySelector("#visor");
+  const restart = document.querySelector("#restart");
+  const ten = document.querySelector("#ten");
+  const twenty = document.querySelector("#twenty");
+  const thirty = document.querySelector("#thirty");
+  const fourty = document.querySelector("#fourty");
+  const fifty = document.querySelector("#fifty");
+  const hundred = document.querySelector("#hundred");
+  const twohundred = document.querySelector("#twohundred");
+  const threehundred = document.querySelector("#threehundred");
+  const fourhundred = document.querySelector("#fourhundred");
+  let counter = 0;
   visor.innerHTML = counter;
-});
 
-ten.addEventListener("click", () => {
-  counter += 10;
-  visor.innerHTML = counter;
-});
-
-twenty.addEventListener("click", () => {
-  counter += 20;
-  visor.innerHTML = counter;
-});
-
-thirty.addEventListener("click", () => {
-  counter += 30;
-  visor.innerHTML = counter;
-});
-
-fourty.addEventListener("click", () => {
-  counter += 40;
-  visor.innerHTML = counter;
-});
-
-fifty.addEventListener("click", () => {
-  counter += 50;
-  visor.innerHTML = counter;
-});
-
-hundred.addEventListener("click", () => {
-  counter += 100;
-  visor.innerHTML = counter;
-});
-
-twohundred.addEventListener("click", () => {
-  counter += 200;
-  visor.innerHTML = counter;
-});
-
-threehundred.addEventListener("click", () => {
-  counter += 300;
-  visor.innerHTML = counter;
-});
-
-fourhundred.addEventListener("click", () => {
-  counter += 400;
-  visor.innerHTML = counter;
-});
-
-const sumVal = document.getElementById("other-sum");
-const subsVal = document.getElementById("other-subs");
-
-sumVal.addEventListener("click", () => {
-  let otherVal = parseInt(document.getElementById("otherval").value);
-  if (otherVal) {
-    counter += otherVal;
+  restart.addEventListener("click", () => {
+    counter = 0;
     visor.innerHTML = counter;
-  }
-});
+  });
 
-subsVal.addEventListener("click", () => {
-  let otherVal = parseInt(document.getElementById("otherval").value);
-  if (otherVal) {
-    counter -= otherVal;
+  ten.addEventListener("click", () => {
+    counter += 10;
     visor.innerHTML = counter;
-  }
-});
+  });
+
+  twenty.addEventListener("click", () => {
+    counter += 20;
+    visor.innerHTML = counter;
+  });
+
+  thirty.addEventListener("click", () => {
+    counter += 30;
+    visor.innerHTML = counter;
+  });
+
+  fourty.addEventListener("click", () => {
+    counter += 40;
+    visor.innerHTML = counter;
+  });
+
+  fifty.addEventListener("click", () => {
+    counter += 50;
+    visor.innerHTML = counter;
+  });
+
+  hundred.addEventListener("click", () => {
+    counter += 100;
+    visor.innerHTML = counter;
+  });
+
+  twohundred.addEventListener("click", () => {
+    counter += 200;
+    visor.innerHTML = counter;
+  });
+
+  threehundred.addEventListener("click", () => {
+    counter += 300;
+    visor.innerHTML = counter;
+  });
+
+  fourhundred.addEventListener("click", () => {
+    counter += 400;
+    visor.innerHTML = counter;
+  });
+
+  const sumVal = document.getElementById("other-sum");
+  const subsVal = document.getElementById("other-subs");
+
+  sumVal.addEventListener("click", () => {
+    let otherVal = parseInt(document.getElementById("otherval").value);
+    if (otherVal) {
+      counter += otherVal;
+      visor.innerHTML = counter;
+    }
+  });
+
+  subsVal.addEventListener("click", () => {
+    let otherVal = parseInt(document.getElementById("otherval").value);
+    if (otherVal) {
+      counter -= otherVal;
+      visor.innerHTML = counter;
+    }
+  });
+}
+
+calculator();
