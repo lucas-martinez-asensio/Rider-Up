@@ -423,8 +423,8 @@ const getLocations = () => {
     "Dogg",
     { lat: -34.55480102880425, lng: -58.45192853579767 },
     false,
-    "Dogg: " + noRet,
-    './img/not.png"'
+    `Dogg: ${noRet}.`,
+    "./img/not.png"
   );
 
   const CisneBl = new Local(
